@@ -1,24 +1,11 @@
-# aphios-store
+APHIOS WEBSTORE
+----------------
 
-## Project setup
-```
-npm install
-```
+A simple exemple of merchant-site command-confirm webpage.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Uses Vue JS and a minimal NodeJS backend server.
 
-### Compiles and minifies for production
-```
-npm run build
-```
+The page has a design for destktop browser and another one for mobiles.
 
-### Lints and fixes files
-```
-npm run lint
-```
+View on Heroku : https://aphios-webstore.herokuapp.com/
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
