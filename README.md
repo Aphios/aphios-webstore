@@ -1,7 +1,7 @@
 APHIOS WEBSTORE
 ----------------
 
-A simple exemple of merchant-site command-confirm webpage.
+A simple example of merchant-site command-confirm webpage.
 
 Uses Vue JS and a minimal NodeJS backend server.
 
