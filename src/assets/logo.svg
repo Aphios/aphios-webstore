@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="793.70081"
+   height="1122.5197"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:export-filename="C:\Users\Sophie\Downloads\logo.png"
+   inkscape:export-xdpi="29.43066"
+   inkscape:export-ydpi="29.43066"
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15, custom)"
+   sodipodi:docname="logo.svg">
+  <defs
+     id="defs2">
+    <rect
+       x="57.830357"
+       y="37.797619"
+       width="47.625"
+       height="26.836309"
+       id="rect847" />
+    <rect
+       x="57.263393"
+       y="37.041668"
+       width="81.831848"
+       height="48.758926"
+       id="rect841" />
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter929"
+       x="-0.0016302275"
+       width="1.0032605"
+       y="-0.00335208"
+       height="1.0067042">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.0462845"
+         id="feGaussianBlur931" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="376.79333"
+     inkscape:cy="302.85714"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     units="px" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:#4461ab;fill-opacity:0.831063;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 27.78125,67.27976 c 0,0 18.142857,-2.645833 26.836308,-21.355653 C 63.31101,27.214285 156.10416,65.011905 157.23809,47.43601 157.04911,106.02232 75.028273,61.799107 27.78125,67.27976 Z"
+       id="path837"
+       inkscape:export-xdpi="1"
+       inkscape:export-ydpi="1" />
+    <rect
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.222486;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:66.7087"
+       id="rect933"
+       width="81.07589"
+       height="43.65625"
+       x="51.782738"
+       y="35.529762"
+       inkscape:export-xdpi="1"
+       inkscape:export-ydpi="1" />
+    <text
+       xml:space="preserve"
+       id="text839"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect841);fill:#000000;fill-opacity:1;stroke:none;filter:url(#filter929);"
+       transform="translate(0.18898809,-2.8348215)"
+       inkscape:export-xdpi="1"
+       inkscape:export-ydpi="1"><tspan
+         x="57.263672"
+         y="52.331786"><tspan
+           style="fill:#8a8a8a;fill-opacity:1">Aphios</tspan><tspan
+           style="fill:#9c9c9c;fill-opacity:1">
+</tspan></tspan><tspan
+         x="57.263672"
+         y="73.498412"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.9333px;font-family:Caladea;-inkscape-font-specification:Caladea;fill:#acacac;fill-opacity:1">Webstore</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       id="text845"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect847);fill:#000000;fill-opacity:1;stroke:none;" />
+  </g>
+</svg>
