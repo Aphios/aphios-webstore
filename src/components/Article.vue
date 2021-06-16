@@ -11,7 +11,7 @@
 
     <div class="article-description">
       <h3>{{ articleData.title }}</h3>
-      <h3>{{ articleData.price }}</h3>
+      <h3>{{ articleData.price.toFixed(2) }} €</h3>
       <p>{{ articleData.size }}</p>
       <p>Qté : {{ purchaseData.qty }}</p>
     </div>

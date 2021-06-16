@@ -11,9 +11,9 @@
         </div>
 
         <div class="spaced">
-            <p>{{ purchase.subTotal }}</p>
-            <p>{{ purchase.deliveryPrice }}</p>
-            <p><strong>{{ purchase.total }}</strong></p>
+            <p>{{ purchase.subTotal.toFixed(2) }}€</p>
+            <p>{{ delivery }}</p>
+            <p><strong>{{ purchase.total.toFixed(2) }}€</strong></p>
         </div>
 
     </div>
@@ -27,7 +27,12 @@ import DashTitle from "./DashTitle"
 export default {
     name: "Total",
     props: ["purchase"],
-    components: { DashTitle }
+    components: { DashTitle },
+    computed: {
+        delivery(){
+            return this.purchase.deliveryPrice === 0 ? "GRATUITE" : (this.purchase.deliveryPrice + "€")
+        }
+    }
 }
 </script>
 

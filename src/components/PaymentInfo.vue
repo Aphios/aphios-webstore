@@ -32,13 +32,7 @@ export default {
             if(!this.purchase){
                 return
             }
-            switch(this.purchase.paymentMethod.toUpperCase()){
-                case "VISA":
-                    this.paymentImgSrc = require("../assets/visa.jpg")
-                    break
-                default:
-                    this.paymentImgSrc = ""
-            }
+            this.paymentImgSrc = require(`../assets/${this.purchase.paymentMethod.toLowerCase()}.jpg`)
         }
     } 
 }

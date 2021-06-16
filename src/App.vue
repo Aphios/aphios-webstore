@@ -1,27 +1,23 @@
 <template>
-
   <Header />
 
   <div class="page">
-    <Purchase :purchase="purchase" :articleSum="articleSum" />
-    <DeliveryInfo :purchase="purchase" />
+    <Purchase :purchase="purchase" :articleSum="articleSum" :months="months"/>
+    <DeliveryInfo :purchase="purchase" :months="months"/>
     <PaymentInfo :purchase="purchase" />
     <Total :purchase="purchase" />
     <Help />
-    
   </div>
-
 </template>
 
 <script>
 
-import Header from "./components/Header"
-import Purchase from "./components/Purchase"
-import DeliveryInfo from "./components/DeliveryInfo"
-import PaymentInfo from "./components/PaymentInfo"
-import Total from "./components/Total"
-import Help from "./components/Help"
-
+import Header from "./components/Header";
+import Purchase from "./components/Purchase";
+import DeliveryInfo from "./components/DeliveryInfo";
+import PaymentInfo from "./components/PaymentInfo";
+import Total from "./components/Total";
+import Help from "./components/Help";
 
 export default {
   name: "App",
@@ -30,31 +26,32 @@ export default {
     return {
       purchase: [],
       articleSum: 0,
+      months : ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"]
     };
   },
   methods: {
     async fetchPurchase(id) {
-      const response = await fetch(`https://aphios-webstore-api.herokuapp.com/purchases/${id}`);
+      const response = await fetch(
+        `https://aphios-webstore-api.herokuapp.com/purchases/${id}`
+      );
       const data = await response.json();
       return data;
     }
   },
   async created() {
     // For the purpose of this is test page I use a specific id
-    this.purchase = await this.fetchPurchase(79886);
-    for (let article of this.purchase.articles) {
-      this.articleSum += article.qty;
-    }
-  },
-}
-
+    this.purchase = await this.fetchPurchase(79886)
+    this.articleSum = this.purchase.articles.reduce(function (sum, art) {
+      return sum + art.qty
+      }, 0);
+  }
+};
 </script>
 
 
 
 <style lang="scss">
-
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
 
 $main-color: #202347;
 
@@ -73,11 +70,11 @@ body {
 
 h1,
 h2,
-h3, 
+h3,
 h4 {
   text-transform: uppercase;
   margin: 0.4rem;
-  @media(min-width: 450px){
+  @media (min-width: 450px) {
     margin: 1rem;
   }
 }
@@ -94,7 +91,7 @@ h3 {
   font-size: 1.1rem;
 }
 
-h4{
+h4 {
   font-size: 1rem;
 }
 
@@ -125,60 +122,59 @@ h4{
 
 .toggle {
   position: relative;
-  &-inner{
+  &-inner {
     margin: 1rem;
   }
 }
 
-.spaced{
+.spaced {
   line-height: 2.2em;
 }
 
-.embossed{
+.embossed {
   border: 1px solid rgba(0, 0, 255, 0.2);
-  box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.3); 
+  box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.3);
   margin: 1rem;
   padding: 0.5rem;
   display: flex;
   justify-content: space-between;
-  p{
+  p {
     padding-left: 0.4rem;
-    @media(min-width: 450px){
+    @media (min-width: 450px) {
       padding-left: 1rem;
     }
   }
 }
 
-.up-case{
-  text-transform : uppercase;
+.up-case {
+  text-transform: uppercase;
 }
 
-.header{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    box-shadow: 0 5px 5px 1px rgba(0, 0, 255, .2);
-    height: 100px;
-    margin-bottom: 0.8rem;
-    position: relative;
-    &.dropdown-menu{
-      position: absolute;
-      top:101px;
-      left:1px;
-      z-index:3;
-      background: #fff;
-      width: 100%;
-      height: 90px;
-      justify-content: space-evenly;
-      text-align: center;
-      h4{
-        font-size: 0.8rem;
-      }
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 5px 5px 1px rgba(0, 0, 255, 0.2);
+  height: 100px;
+  margin-bottom: 0.8rem;
+  position: relative;
+  &.dropdown-menu {
+    position: absolute;
+    top: 101px;
+    left: 1px;
+    z-index: 3;
+    background: #fff;
+    width: 100%;
+    height: 90px;
+    justify-content: space-evenly;
+    text-align: center;
+    h4 {
+      font-size: 0.8rem;
     }
+  }
 }
 
-.clickable{
+.clickable {
   cursor: pointer;
 }
-
 </style>
